@@ -1,0 +1,9 @@
+.test{
+    color:red;
+    background: url('../img/a.jpg');
+}
+.iconStyle{
+    font-size: 100px;
+    font-weight: bolder;
+    color: #000fff;
+}
