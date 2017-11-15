@@ -7,6 +7,7 @@ import 'main';
 import 'font';
 //import {DatePicker} from 'antd';
 import DateSelect from 'js/antdTest';
+import ReactStudy from 'js/reactStudy';
 
 function nodeDiv (){
 
@@ -31,6 +32,10 @@ ReactDom.render(
             <i className="iconfont icon-xinyongqia-copy iconStyle"></i>
         </div>
         <DateSelect></DateSelect>
+        <div>
+            <h2>React</h2>
+            <ReactStudy></ReactStudy>
+        </div>
     </div>,
     document.getElementById('app')
 );

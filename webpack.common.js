@@ -17,10 +17,12 @@ module.exports={
         rules:[
             {
                 test:/\.js$/,
+                exclude: /(node_modules|bower_components)/,
                 use:{
                     loader:'babel-loader',
                     options:{
-                        presets:[['es2015'],['react']],
+                        presets:[['es2015'],['react'],['stage-0']],
+                        //antd按需加载组件所需要的样式 babel-plugin-import
                         plugins:[["import", { libraryName: "antd", style: "css" }] ]
                     }
                 }
@@ -54,7 +56,5 @@ module.exports={
             //template:path.resolve(__dirname,'entry/index.html')
         }),
         new CleanWebpackPlugin(['dist'])
-        //antd按需加载组件所需要的样式
-        //["import",{libraryName:'antd',style:'css'}]
     ]
 };
