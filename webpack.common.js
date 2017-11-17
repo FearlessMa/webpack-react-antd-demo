@@ -21,6 +21,7 @@ module.exports={
                 use:{
                     loader:'babel-loader',
                     options:{
+						//stage-0 插件支持es7  名称=()=>{}写法
                         presets:[['es2015'],['react'],['stage-0']],
                         //antd按需加载组件所需要的样式 babel-plugin-import
                         plugins:[["import", { libraryName: "antd", style: "css" }] ]

@@ -8,6 +8,7 @@ import 'font';
 //import {DatePicker} from 'antd';
 import DateSelect from 'js/antdTest';
 import ReactStudy from 'js/reactStudy';
+import StateUp from 'js/reactStateUp';
 
 function nodeDiv (){
 
@@ -36,6 +37,8 @@ ReactDom.render(
             <h2>React</h2>
             <ReactStudy></ReactStudy>
         </div>
+        <br/><br/><br/>
+        <StateUp></StateUp>
     </div>,
     document.getElementById('app')
 );
